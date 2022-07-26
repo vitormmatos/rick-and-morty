@@ -18,11 +18,11 @@ export class PaginatorComponent {
     }, 10)
   }
 
-  activeButton(index: number): string{
-    if(this.pageNumber === index.toString()){
-      return "btn-active"
+  activeButton (index: number): string {
+    if (this.pageNumber === index.toString()) {
+      return 'btn-active'
     }
 
-    return ""
+    return ''
   }
 }

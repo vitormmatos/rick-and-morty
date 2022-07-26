@@ -10,11 +10,17 @@ You can access it [here](https://rick-and-morty-production.up.railway.app/charac
 
 ## Screenshots
 
+On Desktop:
+
 ![desktop-dark](./screenshots/desktop-dark.png)
 
-![theming](./screenshots/theming.png)
+On Mobile:
 
-![mobile-dark](./screenshots/mobile-dark.png)
+<img src="./screenshots/mobile-dark.png" style="width:90px; height:auto"/>
+
+Theming:
+
+![theming](./screenshots/theming.png)
 
 ## Copyright
 

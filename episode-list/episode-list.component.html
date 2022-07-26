@@ -1,0 +1,20 @@
+<h1 class="flex text-4xl justify-center mt-12 mb-6">Locations</h1>
+
+<div class="flex flex-wrap justify-center">
+  <div *ngFor="let episode of episodes">
+    <div
+      (click)="goToPage(episode.id)"
+      class="card w-64 bg-base-200 hover:bg-primary shadow-xl m-4"
+    >
+      <div class="card-body">
+        <h2 class="card-title">{{ episode.name }}</h2>
+        <div>
+          {{episode.air_date}}
+        </div>
+        {{episode.episode}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-paginator pageName="locations/page/"></app-paginator>

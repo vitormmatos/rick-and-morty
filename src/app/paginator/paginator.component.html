@@ -1,0 +1,9 @@
+<div class="btn-group flex justify-center my-10">
+  <button
+    *ngFor="let item of [1,2,3,4,5,6,7]"
+    (click)="goToPage(item)"
+    class="btn"
+  >
+    {{item}}
+  </button>
+</div>

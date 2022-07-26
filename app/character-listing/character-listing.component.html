@@ -1,0 +1,26 @@
+<div class="flex flex-wrap justify-center mb-3">
+  <div *ngFor="let character of characters; let i = index">
+    <div class="card w-64 bg-base-200 hover:bg-primary shadow-xl m-4">
+      <figure>
+        <img class="w-64" src="{{character.image}}" alt="{{character.name}}" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title mb-1">{{ character.name }}</h2>
+        Species: {{character.species}}
+        <div>
+          Status:
+          <div
+            class="ml-1 indicator-item badge badge-sm {{badgeStatusColor(character)}}"
+          >
+            {{character.status}}
+          </div>
+        </div>
+
+        <span class="text-slate-300 mt-3">First seen in::</span>
+        {{character.origin.name}}
+        <span class="text-slate-300 mt-3">Last known location:</span>
+        {{character.location.name}}
+      </div>
+    </div>
+  </div>
+</div>

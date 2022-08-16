@@ -12,7 +12,6 @@ import { PaginatorComponent } from './paginator/paginator.component'
 import { CharacterListingComponent } from './character-listing/character-listing.component'
 import { EpisodeComponent } from './episode/episode.component'
 import { EpisodeListComponent } from './episode-list/episode-list.component'
-import { ThemeComponent } from './theme/theme.component'
 
 @NgModule({
   declarations: [
@@ -25,8 +24,7 @@ import { ThemeComponent } from './theme/theme.component'
     PaginatorComponent,
     CharacterListingComponent,
     EpisodeComponent,
-    EpisodeListComponent,
-    ThemeComponent
+    EpisodeListComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

@@ -11,8 +11,7 @@ export class PaginatorComponent {
 
   constructor (private readonly router: Router) {}
 
-  goToPage (pageNumber: number): void {
-    void this.router.navigate([this.pageName, pageNumber])
+  refresh (): void {
     setTimeout(() => {
       window.location.reload()
     }, 10)

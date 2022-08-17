@@ -21,20 +21,20 @@
         tabindex="0"
         class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-300 rounded-box w-52"
       >
-        <li><a href="characters/page/1">Characters</a></li>
-        <li><a href="locations/page/1">Locations</a></li>
-        <li><a href="episodes/page/1">Episodes</a></li>
+      <li><a [routerLink]="['characters', 'page', 1]">Characters</a></li>
+      <li><a [routerLink]="['locations', 'page', 1]">Locations</a></li>
+      <li><a [routerLink]="['episodes', 'page', 1]">Episodes</a></li>
       </ul>
     </div>
-    <a href="characters" class="btn btn-ghost normal-case text-xl">
+    <a [routerLink]="['characters', 'page', 1]" class="btn btn-ghost normal-case text-xl">
       <img class="w-40 h-auto" src="../assets/text-logo.png"
     /></a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal p-0">
-      <li><a href="characters/page/1">Characters</a></li>
-      <li><a href="locations/page/1">Locations</a></li>
-      <li><a href="episodes/page/1">Episodes</a></li>
+      <li><a [routerLink]="['characters', 'page', 1]">Characters</a></li>
+      <li><a [routerLink]="['locations', 'page', 1]">Locations</a></li>
+      <li><a [routerLink]="['episodes', 'page', 1]">Episodes</a></li>
     </ul>
   </div>
   <div class="navbar-end">

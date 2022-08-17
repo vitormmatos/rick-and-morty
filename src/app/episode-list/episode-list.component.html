@@ -2,8 +2,8 @@
 
 <div class="flex flex-wrap justify-center">
   <div *ngFor="let episode of episodes">
-    <div
-      (click)="goToPage(episode.id)"
+    <a
+      [routerLink]="['/episodes', episode.id]"
       class="card w-64 bg-base-200 hover:bg-primary shadow-xl m-4"
     >
       <div class="card-body">
@@ -13,7 +13,7 @@
         </div>
         {{episode.episode}}
       </div>
-    </div>
+    </a>
   </div>
 </div>
 

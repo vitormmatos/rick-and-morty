@@ -2,8 +2,8 @@
 
 <div class="flex flex-wrap justify-center">
   <div *ngFor="let location of locations">
-    <div
-      (click)="goToPage(location.id)"
+    <a
+      [routerLink]="['/locations', location.id]"
       class="card w-64 bg-base-200 hover:bg-primary shadow-xl m-4"
     >
       <div class="card-body">
@@ -15,7 +15,7 @@
           <span class="font-semibold">Dimension:</span> {{location.dimension}}
         </span>
       </div>
-    </div>
+    </a>
   </div>
 </div>
 

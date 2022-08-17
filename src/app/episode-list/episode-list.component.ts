@@ -22,11 +22,4 @@ export class EpisodeListComponent implements OnInit {
       this.episodes = data.results
     })
   }
-
-  goToPage (id: number): void {
-    void this.router.navigate(['episodes', id])
-    setTimeout(() => {
-      window.location.reload()
-    }, 10)
-  }
 }

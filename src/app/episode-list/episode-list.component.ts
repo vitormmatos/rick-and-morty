@@ -24,7 +24,7 @@ export class EpisodeListComponent implements OnInit {
   }
 
   goToPage (id: number): void {
-    void this.router.navigate([`episodes/${id}`])
+    void this.router.navigate(['episodes', id])
     setTimeout(() => {
       window.location.reload()
     }, 10)

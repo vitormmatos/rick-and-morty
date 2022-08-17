@@ -25,7 +25,7 @@ export class LocationListComponent implements OnInit {
   }
 
   goToPage (id: number): void {
-    void this.router.navigate([`locations/${id}`])
+    void this.router.navigate(['locations', id])
     setTimeout(() => {
       window.location.reload()
     }, 10)

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-import { ActivatedRoute, Router } from '@angular/router'
+import { ActivatedRoute } from '@angular/router'
 import { Episode } from '../episode/episode.model'
 import { EpisodeService } from '../episode/episode.service'
 
@@ -14,7 +14,6 @@ export class EpisodeListComponent implements OnInit {
   constructor (
     private readonly service: EpisodeService,
     private readonly route: ActivatedRoute,
-    private readonly router: Router
   ) {}
 
   ngOnInit (): void {

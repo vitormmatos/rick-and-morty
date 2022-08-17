@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core'
-import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-paginator',
@@ -9,7 +8,7 @@ export class PaginatorComponent {
   @Input() pageName!: string
   @Input() pageNumber!: string
 
-  constructor (private readonly router: Router) {}
+  constructor () {}
 
   refresh (): void {
     setTimeout(() => {

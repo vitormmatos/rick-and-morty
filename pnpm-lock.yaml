@@ -21,6 +21,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^4.0.1
   '@typescript-eslint/parser': '4'
   autoprefixer: ^10.4.7
+  cc-md: ^0.4.1
   daisyui: ^2.17.0
   eslint: ^7.12.1
   eslint-config-standard-with-typescript: ^21.0.1
@@ -51,6 +52,7 @@ dependencies:
   '@angular/platform-browser-dynamic': 14.1.0_4uelz7lddsxzh2as2vx6t5hnym
   '@angular/router': 14.1.0_67lxsyxez3p2fu4l4xhjxc75w4
   autoprefixer: 10.4.7_postcss@8.4.14
+  cc-md: 0.4.1
   daisyui: 2.17.0_ugi4xkrfysqkt4c4y6hkyfj344
   postcss: 8.4.14
   rxjs: 7.5.5
@@ -3138,6 +3140,10 @@ packages:
   /caniuse-lite/1.0.30001373:
     resolution: {integrity: sha512-pJYArGHrPp3TUqQzFYRmP/lwJlj8RCbVe3Gd3eJQkAV8SAC6b19XS9BjMvRdvaS8RMkaTN8ZhoHP6S1y8zzwEQ==}
     dev: true
+
+  /cc-md/0.4.1:
+    resolution: {integrity: sha512-cmFhCsunG8XE0bUoDbkD0+tnNLvW93t8FbKM3F5kv7qAiU4pGn6awRAkhS014SaP4sElGFpztm1y9gko3q2/bw==}
+    dev: false
 
   /chalk/2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}

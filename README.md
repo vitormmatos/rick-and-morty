@@ -1,6 +1,9 @@
 # Rick and Morty
 
 <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
+[![npm](https://flat.badgen.net/npm/license/cc-md)](https://www.npmjs.org/package/cc-md)
+[![npm](https://flat.badgen.net/npm/v/cc-md)](https://www.npmjs.org/package/cc-md)
+[![CI](https://img.shields.io/github/workflow/status/idleberg/Creative-Commons-Markdown/CI?style=flat-square)](https://github.com/idleberg/Creative-Commons-Markdown/actions)
 
 ## What is this?
 

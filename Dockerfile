@@ -5,7 +5,7 @@ COPY package.json pnpm-lock.yaml ./
 RUN npm install -g pnpm
 RUN pnpm install
 COPY . .
-RUN pnpm run build
+RUN pnpm run build --configuration production --aot
 
 ### STAGE 2: Run ###
 FROM nginx:1.23.1-alpine

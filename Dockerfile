@@ -1,5 +1,5 @@
 ### STAGE 1: Build ###
-FROM node:current-alpine3.15 AS build
+FROM node:current-slim AS build
 WORKDIR /usr/src/app
 COPY package.json pnpm-lock.yaml ./
 RUN npm install -g pnpm

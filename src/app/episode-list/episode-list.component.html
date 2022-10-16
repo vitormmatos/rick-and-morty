@@ -1,20 +1,20 @@
 <h1 class="flex text-4xl justify-center mt-12 mb-8">Episodes</h1>
 
-<div class="flex flex-wrap justify-center">
-  <div *ngFor="let episode of episodes">
+<main class="flex flex-wrap justify-center">
+  <article *ngFor="let episode of episodes">
     <a
       [routerLink]="['/episodes', episode.id]"
       class="card w-64 bg-base-200 hover:bg-primary shadow-xl m-4"
     >
-      <div class="card-body">
+      <section class="card-body">
         <h2 class="card-title mb-3">{{ episode.name }}</h2>
         <div>
           {{episode.air_date}}
         </div>
         {{episode.episode}}
-      </div>
+      </section>
     </a>
-  </div>
-</div>
+  </article>>
+</main>
 
 <app-paginator pageName="locations/page/" pageNumber="{{id}}"></app-paginator>

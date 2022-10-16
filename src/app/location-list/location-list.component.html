@@ -1,12 +1,12 @@
 <h1 class="flex text-4xl justify-center mt-12 mb-6">Locations</h1>
 
-<div class="flex flex-wrap justify-center">
-  <div *ngFor="let location of locations">
+<main class="flex flex-wrap justify-center">
+  <article *ngFor="let location of locations">
     <a
       [routerLink]="['/locations', location.id]"
       class="card w-64 bg-base-200 hover:bg-primary shadow-xl m-4"
     >
-      <div class="card-body">
+      <section class="card-body">
         <span class="card-title">{{ location.name }}</span>
         <span class="mt-3 mb-1">
           <span class="font-semibold">Type:</span> {{location.type}}
@@ -14,9 +14,9 @@
         <span>
           <span class="font-semibold">Dimension:</span> {{location.dimension}}
         </span>
-      </div>
+      </section>
     </a>
-  </div>
-</div>
+  </article>
+</main>
 
 <app-paginator pageName="locations/page/" pageNumber="{{id}}"></app-paginator>

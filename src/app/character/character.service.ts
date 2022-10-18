@@ -9,7 +9,7 @@ import { Observable } from 'rxjs'
 })
 export class CharacterService {
   private readonly CHARACTER_PAGE_API =
-  'https://rickandmortyapi.com/api/character/?page='
+    'https://rickandmortyapi.com/api/character/?page='
 
   constructor (private readonly httpClient: HttpClient) {}
 

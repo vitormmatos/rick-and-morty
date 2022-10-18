@@ -14,7 +14,7 @@ export class LocationListComponent implements OnInit {
 
   constructor (
     private readonly service: LocationService,
-    private readonly route: ActivatedRoute,
+    private readonly route: ActivatedRoute
   ) {}
 
   ngOnInit (): void {

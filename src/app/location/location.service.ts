@@ -9,13 +9,13 @@ import { Observable } from 'rxjs'
 })
 export class LocationService {
   private readonly LOCATION_URL =
-  'https://rickandmortyapi.com/api/location/?name='
+    'https://rickandmortyapi.com/api/location/?name='
 
   private readonly SINGLE_LOCATION_API =
-  'https://rickandmortyapi.com/api/location/'
+    'https://rickandmortyapi.com/api/location/'
 
   private readonly ALL_LOCATION_API =
-  'https://rickandmortyapi.com/api/location?page='
+    'https://rickandmortyapi.com/api/location?page='
 
   constructor (private readonly httpClient: HttpClient) {}
 

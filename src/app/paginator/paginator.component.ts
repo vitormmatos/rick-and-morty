@@ -8,8 +8,6 @@ export class PaginatorComponent {
   @Input() pageName!: string
   @Input() pageNumber!: string
 
-  constructor () {}
-
   refresh (): void {
     setTimeout(() => {
       window.location.reload()

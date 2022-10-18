@@ -13,7 +13,7 @@ export class EpisodeListComponent implements OnInit {
 
   constructor (
     private readonly service: EpisodeService,
-    private readonly route: ActivatedRoute,
+    private readonly route: ActivatedRoute
   ) {}
 
   ngOnInit (): void {

@@ -9,10 +9,10 @@ import { Observable } from 'rxjs'
 })
 export class EpisodeService {
   private readonly SINGLE_EPISODE_API =
-  'https://rickandmortyapi.com/api/episode/'
+    'https://rickandmortyapi.com/api/episode/'
 
   private readonly ALL_EPISODE_API =
-  'https://rickandmortyapi.com/api/episode/?page='
+    'https://rickandmortyapi.com/api/episode/?page='
 
   constructor (private readonly httpClient: HttpClient) {}
 

@@ -1,8 +1,8 @@
 # Rick and Morty
 
-<a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
-[![npm](https://flat.badgen.net/npm/license/cc-md)](https://www.npmjs.org/package/cc-md)
-[![CI](https://img.shields.io/github/workflow/status/idleberg/Creative-Commons-Markdown/CI?style=flat-square)](https://github.com/vitormmatos/rick-and-morty/actions)
+[![Rock and Morty - Docker Image CI][ci-badge-icon]][ci-dadge-link]
+[![code style][code-style-icon]][code-style-link]
+[![npm][license-icon]][license-link]
 
 ## What is this?
 
@@ -29,3 +29,11 @@ Theming:
 Rick and Morty is created by Justin Roiland and Dan Harmon for Adult Swim. The data and images are used without claim of ownership and belong to their respective owners.
 
 This application is open source and uses a Creative Commons CC0 1.0 Universal license.
+
+
+[ci-badge-icon]: https://github.com/vitormmatos/rick-and-morty/actions/workflows/docker-image.yml/badge.svg
+[ci-dadge-link]: https://github.com/vitormmatos/rick-and-morty/actions/workflows/docker-image.yml
+[code-style-icon]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
+[code-style-link]: https://standardjs.com
+[license-icon]: https://flat.badgen.net/npm/license/cc-md
+[license-link]: https://www.npmjs.org/package/cc-md

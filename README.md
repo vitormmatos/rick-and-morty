@@ -10,6 +10,26 @@ This is an Angular project that consumes the [Rick and Morty REST API](https://r
 
 You can access it [here](https://rick-and-morty-production.up.railway.app/characters/page/1)
 
+## Running
+
+Clone the project, go to the project path and install it's dependencies:
+
+```shell
+npm install
+```
+You can use another package manager like yarn or pnpm(recommended)
+
+Run the project with
+```shell
+ng serve
+```
+
+To see it working go to your browser on:
+```browser
+localhost:4200
+```
+Enjoy 😉
+
 ## Screenshots
 
 On Desktop:

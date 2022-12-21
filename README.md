@@ -6,9 +6,9 @@
 
 ## What is this?
 
-This is an Angular project that consumes the [Rick and Morty REST API](https://rickandmortyapi.com/)
+This is an Angular project that consumes the [Rick and Morty REST API][api-link]
 
-You can access it [here](https://rick-and-morty-production.up.railway.app/characters/page/1)
+You can access it [here][railway-deploy-link]
 
 ## Running
 
@@ -34,7 +34,7 @@ Enjoy 😉
 
 On Desktop:
 
-![desktop-dark](./screenshots/desktop-dark.png)
+![desktop-dark][dark-desktop-screenshot]
 
 On Mobile:
 
@@ -42,7 +42,7 @@ On Mobile:
 
 Theming:
 
-![theming](./screenshots/theming.png)
+![theming][theming-desktop-screenshot]
 
 ## Copyright
 
@@ -56,3 +56,7 @@ This application is open source and uses a Creative Commons CC0 1.0 Universal li
 [code-style-link]: https://standardjs.com
 [license-icon]: https://flat.badgen.net/npm/license/cc-md
 [license-link]: https://www.npmjs.org/package/cc-md
+[api-link]: https://rickandmortyapi.com/
+[railway-deploy-link]: https://rick-and-morty-production.up.railway.app/characters/page/1
+[dark-desktop-screenshot]: ./screenshots/desktop-dark.png
+[theming-desktop-screenshot]: ./screenshots/theming.png

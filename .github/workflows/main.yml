@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Rick and Morty
-      uses: AhsanAyaz/angular-deploy-gh-pages-actions@1.3.2
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
       with:
         github_access_token: ${{ secrets.RICK_AND_MORTY_SECRET }}
         build_configuration: staging

@@ -8,8 +8,6 @@
 
 This is an Angular project that consumes the [Rick and Morty REST API][api-link]
 
-You can access it [here][railway-deploy-link]
-
 ## Running
 
 Clone the project, go to the project path and install it's dependencies:
@@ -57,6 +55,5 @@ This application is open source and uses a Creative Commons CC0 1.0 Universal li
 [license-icon]: https://flat.badgen.net/npm/license/cc-md
 [license-link]: https://www.npmjs.org/package/cc-md
 [api-link]: https://rickandmortyapi.com/
-[railway-deploy-link]: https://rick-and-morty-production.up.railway.app/characters/page/1
 [dark-desktop-screenshot]: ./screenshots/desktop-dark.png
 [theming-desktop-screenshot]: ./screenshots/theming.png

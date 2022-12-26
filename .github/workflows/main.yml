@@ -14,7 +14,7 @@ jobs:
       uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
       with:
         github_access_token: ${{ secrets.RICK_AND_MORTY_SECRET }}
-        build_configuration: staging
+        build_configuration: build
         base_href: /  
         deploy_branch: main
         angular_dist_build_folder: dist/rick-and-morty

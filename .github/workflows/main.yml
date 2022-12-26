@@ -5,16 +5,15 @@ on:
       - main
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Rick and Morty
-      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
-      with:
-        github_access_token: ${{ secrets.RICK_AND_MORTY_SECRET }}
-        build_configuration: production
-        base_href: /docs/
-        deploy_branch: main
-        angular_dist_build_folder: dist/rick-and-morty
+      - uses: actions/checkout@v2
+      - name: Rick and Morty
+        uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
+        with:
+          github_access_token: ${{ secrets.RICK_AND_MORTY_SECRET }}
+          build_configuration: production
+          base_href: /rick-and-morty-app/
+          deploy_branch: main
+          angular_dist_build_folder: dist/rick-and-morty

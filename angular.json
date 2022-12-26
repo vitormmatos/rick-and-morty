@@ -63,8 +63,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
+            "options": {
+              "browserTarget": "rick-and-morty:build"
+            },
             "production": {
               "browserTarget": "rick-and-morty:build:production"
+            },
+            "es5": {
+              "browserTarget": "rick-and-morty:build:es5"
             },
             "development": {
               "browserTarget": "rick-and-morty:build:development"

@@ -1,0 +1,14 @@
+name: Build
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: Build docker images
+        run: docker build --pull --rm -f "Dockerfile" -t rickandmorty:latest "."

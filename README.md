@@ -1,6 +1,6 @@
 # Rick and Morty
 
-[![Build and Deploy][ci-badge-icon]][ci-badge-link]
+[![Build][ci-badge-icon]][ci-badge-link]
 [![code style][code-style-icon]][code-style-link]
 [![npm][license-icon]][license-link]
 
@@ -48,8 +48,8 @@ Rick and Morty is created by Justin Roiland and Dan Harmon for Adult Swim. The d
 
 This application is open source and uses a Creative Commons CC0 1.0 Universal license.
 
-[ci-badge-icon]: https://github.com/vitormmatos/rick-and-morty/actions/workflows/main.yml/badge.svg
-[ci-badge-link]: https://github.com/vitormmatos/rick-and-morty/actions/workflows/main.yml
+[ci-badge-icon]: https://github.com/vitormmatos/rick-and-morty/actions/workflows/build.yml/badge.svg
+[ci-badge-link]: https://github.com/vitormmatos/rick-and-morty/actions/workflows/build.yml
 [code-style-icon]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [code-style-link]: https://standardjs.com
 [license-icon]: https://flat.badgen.net/npm/license/cc-md

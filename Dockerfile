@@ -11,3 +11,5 @@ RUN pnpm run build --configuration production --aot
 FROM nginx:stable-alpine
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /usr/local/app/dist/rick-and-morty /usr/share/nginx/html
+
+EXPOSE 80

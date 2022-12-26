@@ -1,6 +1,6 @@
 # Rick and Morty
 
-[![Build][docker-build-link]][docker-build-badge]
+[![Build][docker-build-badge]][docker-build-link]
 [![code style][code-style-icon]][code-style-link]
 [![npm][license-icon]][license-link]
 

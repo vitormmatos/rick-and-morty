@@ -10,22 +10,35 @@ This is an Angular project that consumes the [Rick and Morty REST API][api-link]
 
 ## Running
 
-Clone the project, go to the project path and install it's dependencies:
+Clone the project and go to the project path.
 
-```shell
-npm install
+### Docker
+
+Run as a Docker Image:
+
+```zsh
+docker build --pull --rm -f "Dockerfile" -t rickandmorty:latest "."
 ```
-You can use another package manager like yarn or pnpm(recommended)
 
-Run the project with
+### Traditional
+
+Requisites: Node, Angular and a package manager.
+
+
+[Npm][npm-link] is used here but you can use other options as [yarn][yarn-link] or [pnpm][pnpm-link](recommended).
+
+Install it's dependencies and run with:
+
 ```shell
-ng serve
+npm install && ng serve
 ```
 
 To see it working go to your browser on:
+
 ```browser
 localhost:4200
 ```
+
 Enjoy 😉
 
 ## Screenshots
@@ -55,5 +68,8 @@ This application is open source and uses a Creative Commons CC0 1.0 Universal li
 [license-icon]: https://flat.badgen.net/npm/license/cc-md
 [license-link]: https://www.npmjs.org/package/cc-md
 [api-link]: https://rickandmortyapi.com/
+[npm-link]: https://www.npmjs.com/
+[yarn-link]: https://yarnpkg.com/
+[pnpm-link]: https://pnpm.io/
 [dark-desktop-screenshot]: ./screenshots/desktop-dark.png
 [theming-desktop-screenshot]: ./screenshots/theming.png

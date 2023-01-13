@@ -25,8 +25,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
-            "baseHref": "/rick-and-morty-app"
+            "scripts": []
           },
           "configurations": {
             "production": {

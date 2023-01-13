@@ -10,7 +10,7 @@ import { Location } from '../location/location.model'
 export class LocationListComponent implements OnInit {
   locations: Location[] | undefined
   expanded: boolean = false
-  public id = this.route.snapshot.paramMap.get('id')
+  id: string | null = this.route?.snapshot?.paramMap.get('id')
 
   constructor (
     private readonly service: LocationService,

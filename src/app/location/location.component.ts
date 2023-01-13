@@ -11,7 +11,7 @@ import { LocationService } from './location.service'
 })
 export class LocationComponent implements OnInit {
   characters: Character[] = []
-  public id = this.route.snapshot.paramMap.get('id')
+  id: string | null = this.route?.snapshot?.paramMap.get('id')
   location!: Location
 
   constructor (

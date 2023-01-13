@@ -11,7 +11,7 @@ import { EpisodeService } from './episode.service'
 })
 export class EpisodeComponent implements OnInit {
   characters: Character[] = []
-  public id = this.route.snapshot.paramMap.get('id')
+  id: string | null = this.route?.snapshot?.paramMap.get('id')
   episode!: Episode
 
   constructor (

@@ -9,7 +9,7 @@ import { CharacterService } from './character.service'
 })
 export class CharacterComponent implements OnInit {
   characters!: Character[]
-  public id = this.route.snapshot.paramMap.get('id')
+  id: string | null = this.route?.snapshot?.paramMap.get('id')
 
   constructor (
     private readonly service: CharacterService,

@@ -11,7 +11,7 @@ import { LocationService } from './location.service'
 })
 export class LocationComponent implements OnInit {
   characters: Character[] = []
-  id: string | null = this.route?.snapshot?.paramMap.get('id')
+  id!: string
   location!: Location
 
   constructor (
@@ -21,15 +21,18 @@ export class LocationComponent implements OnInit {
   ) {}
 
   ngOnInit (): void {
-    this.locationService.getLocationById(this.id ?? '1').subscribe(data => {
-      this.location = data
-      for (const characterURL of this.location.residents) {
-        this.characterService
-          .getCharacterByURL(characterURL)
-          .subscribe(data2 => {
-            this.characters.push(data2)
-          })
-      }
+    this.route.params.subscribe(params => {
+      this.id = params['id']
+      this.locationService.getLocationById(this.id ?? '1').subscribe(data => {
+        this.location = data
+        for (const characterURL of this.location.residents) {
+          this.characterService
+            .getCharacterByURL(characterURL)
+            .subscribe(data2 => {
+              this.characters.push(data2)
+            })
+        }
+      })
     })
   }
 }

@@ -11,7 +11,7 @@ import { EpisodeService } from './episode.service'
 })
 export class EpisodeComponent implements OnInit {
   characters: Character[] = []
-  id: string | null = this.route?.snapshot?.paramMap.get('id')
+  id!: string
   episode!: Episode
 
   constructor (
@@ -21,15 +21,18 @@ export class EpisodeComponent implements OnInit {
   ) {}
 
   ngOnInit (): void {
-    this.episodeService.getEpisodeById(this.id ?? '1').subscribe(data => {
-      this.episode = data
-      for (const characterURL of this.episode.characters) {
-        this.characterService
-          .getCharacterByURL(characterURL)
-          .subscribe(data2 => {
-            this.characters.push(data2)
-          })
-      }
+    this.route.params.subscribe(params => {
+      this.id = params['id']
+      this.episodeService.getEpisodeById(this.id ?? '1').subscribe(data => {
+        this.episode = data
+        for (const characterURL of this.episode.characters) {
+          this.characterService
+            .getCharacterByURL(characterURL)
+            .subscribe(data2 => {
+              this.characters.push(data2)
+            })
+        }
+      })
     })
   }
 }

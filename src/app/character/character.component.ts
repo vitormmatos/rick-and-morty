@@ -9,7 +9,7 @@ import { CharacterService } from './character.service'
 })
 export class CharacterComponent implements OnInit {
   characters!: Character[]
-  id: string | null = this.route?.snapshot?.paramMap.get('id')
+  id!: string
 
   constructor (
     private readonly service: CharacterService,
@@ -17,8 +17,11 @@ export class CharacterComponent implements OnInit {
   ) {}
 
   ngOnInit (): void {
-    this.service.getCharacters(this.id ?? '1').subscribe(data => {
-      this.characters = data.results
+    this.route.params.subscribe(params => {
+      this.id = params['id']
+      this.service.getCharacters(this.id ?? '1').subscribe(data => {
+        this.characters = data.results
+      })
     })
   }
 }

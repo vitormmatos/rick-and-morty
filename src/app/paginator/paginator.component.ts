@@ -8,12 +8,6 @@ export class PaginatorComponent {
   @Input() pageName!: string
   @Input() pageNumber!: string
 
-  refresh (): void {
-    setTimeout(() => {
-      window.location.reload()
-    }, 10)
-  }
-
   activeButton (index: number): string {
     if (this.pageNumber === index.toString()) {
       return 'btn-active'

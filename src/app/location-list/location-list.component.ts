@@ -18,8 +18,11 @@ export class LocationListComponent implements OnInit {
   ) {}
 
   ngOnInit (): void {
-    this.service.getLocations(this.id ?? '1').subscribe(data => {
-      this.locations = data.results
+    this.route.params.subscribe(params => {
+      this.id = params['id']
+      this.service.getLocations(this.id ?? '1').subscribe(data => {
+        this.locations = data.results
+      })
     })
   }
 }

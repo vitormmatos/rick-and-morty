@@ -17,8 +17,11 @@ export class EpisodeListComponent implements OnInit {
   ) {}
 
   ngOnInit (): void {
-    this.service.getEpisodes(this.id ?? '1').subscribe(data => {
-      this.episodes = data.results
+    this.route.params.subscribe(params => {
+      this.id = params['id']
+      this.service.getEpisodes(this.id ?? '1').subscribe(data => {
+        this.episodes = data.results
+      })
     })
   }
 }

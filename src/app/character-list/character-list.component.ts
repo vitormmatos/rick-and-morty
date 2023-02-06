@@ -2,10 +2,10 @@ import { Component, Input } from '@angular/core'
 import { Character } from '../character/character.model'
 
 @Component({
-  selector: 'app-character-listing',
-  templateUrl: './character-listing.component.html'
+  selector: 'app-character-list',
+  templateUrl: './character-list.component.html'
 })
-export class CharacterListingComponent {
+export class CharacterListComponent {
   @Input() characters!: Character[]
 
   badgeStatusColor (character: Character): string {

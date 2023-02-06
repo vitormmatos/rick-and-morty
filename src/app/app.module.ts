@@ -9,7 +9,7 @@ import { LocationComponent } from './location/location.component'
 import { NavbarComponent } from './navbar/navbar.component'
 import { ThemeChangerComponent } from './theme-changer/theme-changer.component'
 import { PaginatorComponent } from './paginator/paginator.component'
-import { CharacterListingComponent } from './character-listing/character-listing.component'
+import { CharacterListComponent } from './character-list/character-list.component'
 import { EpisodeComponent } from './episode/episode.component'
 import { EpisodeListComponent } from './episode-list/episode-list.component'
 
@@ -22,7 +22,7 @@ import { EpisodeListComponent } from './episode-list/episode-list.component'
     NavbarComponent,
     ThemeChangerComponent,
     PaginatorComponent,
-    CharacterListingComponent,
+    CharacterListComponent,
     EpisodeComponent,
     EpisodeListComponent
   ],

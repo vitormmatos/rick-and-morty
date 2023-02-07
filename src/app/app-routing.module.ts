@@ -7,13 +7,13 @@ import { EpisodeListComponent } from './episode/episode-list/episode-list.compon
 import { EpisodeComponent } from './episode/episode.component'
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'characters/page/1' },
-  { path: 'characters/page/:id', component: CharacterComponent },
-  { path: 'locations/page/:id', component: LocationListComponent },
-  { path: 'locations/:id', component: LocationComponent },
-  { path: 'episodes/page/:id', component: EpisodeListComponent },
-  { path: 'episodes/:id', component: EpisodeComponent },
-  { path: '**', redirectTo: 'characters/page/1' }
+  { path: '', pathMatch: 'full', redirectTo: 'character/page/1' },
+  { path: 'character/page/:id', component: CharacterComponent },
+  { path: 'location/page/:id', component: LocationListComponent },
+  { path: 'location/:id', component: LocationComponent },
+  { path: 'episode/page/:id', component: EpisodeListComponent },
+  { path: 'episode/:id', component: EpisodeComponent },
+  { path: '**', redirectTo: 'character/page/1' }
 ]
 
 @NgModule({

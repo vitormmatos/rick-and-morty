@@ -20,6 +20,6 @@ export class CharacterListComponent {
   }
 
   getLocation(url: string): string {
-    return '/locations/' + url.slice(-1)
+    return '/location/' + url.slice(-1)
   }
 }

@@ -17,9 +17,9 @@
         </div>
 
         <span class="mt-3 font-semibold">First seen in:</span>
-        {{character.origin.name}}
+        <a [href]="getLocation(character.origin.url)">{{character.origin.name}}</a>
         <span class="mt-3 font-semibold">Last known location:</span>
-        {{character.location.name}}
+        <a [href]="getLocation(character.location.url)">{{character.location.name}}</a>
       </section>
     </section>
   </article>

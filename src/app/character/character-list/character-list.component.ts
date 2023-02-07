@@ -18,4 +18,8 @@ export class CharacterListComponent {
         return 'badge-warning'
     }
   }
+
+  getLocation(url: string): string {
+    return '/locations/' + url.slice(-1)
+  }
 }

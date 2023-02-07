@@ -1,12 +1,14 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-paginator',
   templateUrl: './paginator.component.html'
 })
-export class PaginatorComponent {
+export class PaginatorComponent implements OnInit {
   @Input() pageName!: string
   @Input() pageNumber!: string
+  numPages!: number
+  pages!: number[]
 
   activeButton (index: number): string {
     if (this.pageNumber === index.toString()) {
@@ -14,5 +16,10 @@ export class PaginatorComponent {
     }
 
     return ''
+  }
+
+  ngOnInit(): void {
+    this.numPages = this.pageName === 'episode/page/' ? 3 : 7
+    this.pages = Array.from({length: this.numPages}, (_, i) => i + 1)  
   }
 }

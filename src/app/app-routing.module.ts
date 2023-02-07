@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core'
 import { CharacterComponent } from './character/character.component'
-import { LocationListComponent } from './location-list/location-list.component'
+import { LocationListComponent } from './location/location-list/location-list.component'
 import { RouterModule, Routes } from '@angular/router'
 import { LocationComponent } from './location/location.component'
-import { EpisodeListComponent } from './episode-list/episode-list.component'
+import { EpisodeListComponent } from './episode/episode-list/episode-list.component'
 import { EpisodeComponent } from './episode/episode.component'
 
 const routes: Routes = [

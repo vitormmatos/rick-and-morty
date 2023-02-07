@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
-import { Episode } from '../episode/episode.model'
-import { EpisodeService } from '../episode/episode.service'
+import { Episode } from '../episode.model'
+import { EpisodeService } from '../episode.service'
 
 @Component({
   selector: 'app-episode-list',

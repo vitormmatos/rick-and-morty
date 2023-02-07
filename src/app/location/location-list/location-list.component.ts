@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
-import { LocationService } from '../location/location.service'
-import { Location } from '../location/location.model'
+import { LocationService } from '../location.service'
+import { Location } from '../location.model'
 
 @Component({
   selector: 'app-location-list',

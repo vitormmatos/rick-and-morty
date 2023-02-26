@@ -9,7 +9,7 @@ import { EpisodeService } from '../episode.service'
 })
 export class EpisodeListComponent implements OnInit {
   episodes!: Episode[]
-  id: string | null = this.route?.snapshot?.paramMap.get('id')
+  id!: string
 
   constructor (
     private readonly service: EpisodeService,

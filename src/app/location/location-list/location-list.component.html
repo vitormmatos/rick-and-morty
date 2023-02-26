@@ -3,7 +3,7 @@
 <main class="flex flex-wrap justify-center">
   <article *ngFor="let location of locations">
     <a
-      [routerLink]="['/locations', location.id]"
+      [routerLink]="['/location', location.id]"
       class="card w-64 bg-base-200 hover:bg-primary shadow-xl m-4"
     >
       <section class="card-body">
@@ -19,4 +19,4 @@
   </article>
 </main>
 
-<app-paginator pageName="location/page/" pageNumber="{{id}}"></app-paginator>
+<app-paginator pageName="location/page/" [pageNumber]="id"></app-paginator>

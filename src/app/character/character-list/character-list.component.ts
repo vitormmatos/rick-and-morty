@@ -8,7 +8,7 @@ import { Character } from '../character.model'
 export class CharacterListComponent {
   @Input() characters!: Character[]
 
-  badgeStatusColor (character: Character): string {
+  getBadgeStatusColor (character: Character): string {
     switch (character.status) {
       case 'Alive':
         return 'badge-success'

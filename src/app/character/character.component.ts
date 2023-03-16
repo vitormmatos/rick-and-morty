@@ -20,7 +20,7 @@ export class CharacterComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.id = params['id']
       this.service.getCharacters(this.id ?? '1').subscribe(data => {
-        this.characters = data.results
+        this.characters = data.results!
       })
     })
   }

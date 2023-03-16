@@ -19,15 +19,15 @@ export class LocationService {
 
   constructor (private readonly httpClient: HttpClient) {}
 
-  public getLocationByName (name: string): Observable<any> {
+  public getLocationByName (name: string): Observable<Location> {
     return this.httpClient.get<Location>(this.LOCATION_URL + name)
   }
 
-  public getLocationById (id: string): Observable<any> {
+  public getLocationById (id: string): Observable<Location> {
     return this.httpClient.get<Location>(this.SINGLE_LOCATION_API + id)
   }
 
-  public getLocations (page: string): Observable<any> {
+  public getLocations (page: string): Observable<Info<Location[]>> {
     return this.httpClient.get<Info<Location[]>>(this.ALL_LOCATION_API + page)
   }
 }

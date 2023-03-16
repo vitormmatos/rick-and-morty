@@ -13,11 +13,11 @@ export class CharacterService {
 
   constructor (private readonly httpClient: HttpClient) {}
 
-  public getCharacterByURL (url: string): Observable<any> {
+  public getCharacterByURL (url: string): Observable<Character> {
     return this.httpClient.get<Character>(url)
   }
 
-  public getCharacters (page: string): Observable<any> {
+  public getCharacters (page: string): Observable<Info<Character[]>> {
     return this.httpClient.get<Info<Character[]>>(
       this.CHARACTER_PAGE_API + page
     )

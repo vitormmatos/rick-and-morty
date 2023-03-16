@@ -16,15 +16,15 @@ export class EpisodeService {
 
   constructor (private readonly httpClient: HttpClient) {}
 
-  public getEpisodeById (id: string): Observable<any> {
+  public getEpisodeById (id: string): Observable<Episode> {
     return this.httpClient.get<Episode>(this.SINGLE_EPISODE_API + id)
   }
 
-  public getEpisodesrByURL (url: string): Observable<any> {
+  public getEpisodesrByURL (url: string): Observable<Episode> {
     return this.httpClient.get<Episode>(url)
   }
 
-  public getEpisodes (page: string): Observable<any> {
+  public getEpisodes (page: string): Observable<Info<Episode[]>> {
     return this.httpClient.get<Info<Episode[]>>(this.ALL_EPISODE_API + page)
   }
 }

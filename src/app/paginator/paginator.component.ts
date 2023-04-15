@@ -10,6 +10,9 @@ export class PaginatorComponent implements OnInit {
   numPages!: number
   pages!: number[]
 
+  private readonly episodeNumberPages: number = 3
+  private readonly characterAndLocationNumberPages: number = 7
+
   activeButton (index: number): string {
     if (this.pageNumber === index.toString()) {
       return 'btn-active'
@@ -19,7 +22,7 @@ export class PaginatorComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.numPages = this.pageName === 'episode/page/' ? 3 : 7
+    this.numPages = this.pageName === 'episode/page/' ? this.episodeNumberPages : this.characterAndLocationNumberPages
     this.pages = Array.from({length: this.numPages}, (_, i) => i + 1)  
   }
 }

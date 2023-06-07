@@ -8,7 +8,7 @@ import { EpisodeService } from '../episode.service'
   templateUrl: './episode-list.component.html'
 })
 export class EpisodeListComponent implements OnInit {
-  episodes!: Episode[]
+  episodes?: Episode[]
   id!: string
 
   constructor (
@@ -18,9 +18,9 @@ export class EpisodeListComponent implements OnInit {
 
   ngOnInit (): void {
     this.route.params.subscribe(params => {
-      this.id = params['id']
-      this.service.getEpisodes(this.id ?? '1').subscribe(data => {
-        this.episodes = data.results!
+      this.id = String(params['id'])
+      this.service.getEpisodes(this.id).subscribe(data => {
+        this.episodes = data.results
       })
     })
   }

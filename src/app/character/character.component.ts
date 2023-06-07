@@ -8,7 +8,7 @@ import { CharacterService } from './character.service'
   templateUrl: './character.component.html'
 })
 export class CharacterComponent implements OnInit {
-  characters!: Character[]
+  characters?: Character[]
   id!: string
 
   constructor (
@@ -18,9 +18,9 @@ export class CharacterComponent implements OnInit {
 
   ngOnInit (): void {
     this.route.params.subscribe(params => {
-      this.id = params['id']
-      this.service.getCharacters(this.id ?? '1').subscribe(data => {
-        this.characters = data.results!
+      this.id = String(params['id'])
+      this.service.getCharacters(this.id).subscribe(data => {
+        this.characters = data.results
       })
     })
   }

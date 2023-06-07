@@ -21,8 +21,8 @@ export class PaginatorComponent implements OnInit {
     return ''
   }
 
-  ngOnInit(): void {
+  ngOnInit (): void {
     this.numPages = this.pageName === 'episode/page/' ? this.episodeNumberPages : this.characterAndLocationNumberPages
-    this.pages = Array.from({length: this.numPages}, (_, i) => i + 1)  
+    this.pages = Array.from({ length: this.numPages }, (_, i) => i + 1)
   }
 }

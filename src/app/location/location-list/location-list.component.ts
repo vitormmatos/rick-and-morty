@@ -8,8 +8,8 @@ import { Location } from '../location.model'
   templateUrl: './location-list.component.html'
 })
 export class LocationListComponent implements OnInit {
-  locations!: Location[]
-  expanded: boolean = false
+  locations?: Location[]
+  expanded = false
   id!: string
 
   constructor (
@@ -19,9 +19,9 @@ export class LocationListComponent implements OnInit {
 
   ngOnInit (): void {
     this.route.params.subscribe(params => {
-      this.id = params['id']
-      this.service.getLocations(this.id ?? '1').subscribe(data => {
-        this.locations = data.results!
+      this.id = String(params['id'])
+      this.service.getLocations(this.id).subscribe(data => {
+        this.locations = data.results
       })
     })
   }

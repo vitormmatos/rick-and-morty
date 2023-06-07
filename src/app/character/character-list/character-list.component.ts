@@ -6,7 +6,7 @@ import { Character } from '../character.model'
   templateUrl: './character-list.component.html'
 })
 export class CharacterListComponent {
-  @Input() characters!: Character[]
+  @Input() characters?: Character[]
 
   getBadgeStatusColor (character: Character): string {
     switch (character.status) {
@@ -19,7 +19,7 @@ export class CharacterListComponent {
     }
   }
 
-  getLocation(url: string): string {
+  getLocation (url: string): string {
     return '/location/' + url.slice(-1)
   }
 }

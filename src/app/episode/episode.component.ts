@@ -22,8 +22,8 @@ export class EpisodeComponent implements OnInit {
 
   ngOnInit (): void {
     this.route.params.subscribe(params => {
-      this.id = params['id']
-      this.episodeService.getEpisodeById(this.id ?? '1').subscribe(data => {
+      this.id = String(params['id'])
+      this.episodeService.getEpisodeById(this.id).subscribe(data => {
         this.episode = data
         for (const characterURL of this.episode.characters) {
           this.characterService

@@ -22,8 +22,8 @@ export class LocationComponent implements OnInit {
 
   ngOnInit (): void {
     this.route.params.subscribe(params => {
-      this.id = params['id']
-      this.locationService.getLocationById(this.id ?? '1').subscribe(data => {
+      this.id = String(params['id'])
+      this.locationService.getLocationById(this.id).subscribe(data => {
         this.location = data
         for (const characterURL of this.location.residents) {
           this.characterService

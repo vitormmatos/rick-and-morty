@@ -11,12 +11,12 @@ export class CharacterComponent implements OnInit {
   characters?: Character[]
   id!: string
 
-  constructor (
+  constructor(
     private readonly service: CharacterService,
     private readonly route: ActivatedRoute
   ) {}
 
-  ngOnInit (): void {
+  ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.id = String(params['id'])
       this.service.getCharacters(this.id).subscribe(data => {

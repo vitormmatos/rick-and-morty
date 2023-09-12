@@ -24,7 +24,6 @@ docker build --pull --rm -f "Dockerfile" -t rickandmorty:latest "."
 
 Requisites: Node, Angular and a package manager.
 
-
 [Npm][npm-link] is used here but you can use other options as [yarn][yarn-link] or [pnpm][pnpm-link](recommended).
 
 Install it's dependencies and run with:

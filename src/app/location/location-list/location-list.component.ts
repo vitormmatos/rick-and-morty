@@ -12,12 +12,12 @@ export class LocationListComponent implements OnInit {
   expanded = false
   id!: string
 
-  constructor (
+  constructor(
     private readonly service: LocationService,
     private readonly route: ActivatedRoute
   ) {}
 
-  ngOnInit (): void {
+  ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.id = String(params['id'])
       this.service.getLocations(this.id).subscribe(data => {

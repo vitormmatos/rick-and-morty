@@ -1,10 +1,9 @@
 <main class="btn-group flex justify-center my-10">
   <button
     *ngFor="let item of pages"
-    [routerLink]="['/'+ pageName, item]"
-    class="btn {{activeButton(item)}}"
-  >
-    {{item}}
+    [routerLink]="['/' + pageName, item]"
+    class="btn {{ activeButton(item) }}">
+    {{ item }}
   </button>
 </main>
 

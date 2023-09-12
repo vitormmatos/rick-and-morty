@@ -8,7 +8,7 @@ import { Character } from '../character.model'
 export class CharacterListComponent {
   @Input() characters?: Character[]
 
-  getBadgeStatusColor (character: Character): string {
+  getBadgeStatusColor(character: Character): string {
     switch (character.status) {
       case 'Alive':
         return 'badge-success'
@@ -19,7 +19,7 @@ export class CharacterListComponent {
     }
   }
 
-  getLocation (url: string): string {
+  getLocation(url: string): string {
     return '/location/' + url.slice(-1)
   }
 }

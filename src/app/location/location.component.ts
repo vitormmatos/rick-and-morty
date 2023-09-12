@@ -14,13 +14,13 @@ export class LocationComponent implements OnInit {
   id!: string
   location!: Location
 
-  constructor (
+  constructor(
     private readonly locationService: LocationService,
     private readonly characterService: CharacterService,
     private readonly route: ActivatedRoute
   ) {}
 
-  ngOnInit (): void {
+  ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.id = String(params['id'])
       this.locationService.getLocationById(this.id).subscribe(data => {

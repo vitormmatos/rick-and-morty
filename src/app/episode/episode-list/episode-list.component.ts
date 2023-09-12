@@ -11,12 +11,12 @@ export class EpisodeListComponent implements OnInit {
   episodes?: Episode[]
   id!: string
 
-  constructor (
+  constructor(
     private readonly service: EpisodeService,
     private readonly route: ActivatedRoute
   ) {}
 
-  ngOnInit (): void {
+  ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.id = String(params['id'])
       this.service.getEpisodes(this.id).subscribe(data => {

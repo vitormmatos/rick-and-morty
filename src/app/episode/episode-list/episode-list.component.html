@@ -4,17 +4,18 @@
   <article *ngFor="let episode of episodes">
     <a
       [routerLink]="['/episode', episode.id]"
-      class="card w-64 bg-base-200 hover:bg-primary shadow-xl m-4"
-    >
+      class="card w-64 bg-base-200 hover:bg-primary shadow-xl m-4">
       <section class="card-body">
         <h2 class="card-title mb-3">{{ episode.name }}</h2>
         <div>
-          {{episode.air_date}}
+          {{ episode.air_date }}
         </div>
-        {{episode.episode}}
+        {{ episode.episode }}
       </section>
-    </a>
-  </article>>
+    </a> </article
+  >>
 </main>
 
-<app-paginator pageName="episode/page/" [pageNumber]="id"></app-paginator>
+<app-paginator
+  pageName="episode/page/"
+  [pageNumber]="id"></app-paginator>

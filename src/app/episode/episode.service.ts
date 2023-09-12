@@ -14,17 +14,17 @@ export class EpisodeService {
   private readonly ALL_EPISODE_API =
     'https://rickandmortyapi.com/api/episode/?page='
 
-  constructor (private readonly httpClient: HttpClient) {}
+  constructor(private readonly httpClient: HttpClient) {}
 
-  public getEpisodeById (id: string): Observable<Episode> {
+  public getEpisodeById(id: string): Observable<Episode> {
     return this.httpClient.get<Episode>(this.SINGLE_EPISODE_API + id)
   }
 
-  public getEpisodesrByURL (url: string): Observable<Episode> {
+  public getEpisodesrByURL(url: string): Observable<Episode> {
     return this.httpClient.get<Episode>(url)
   }
 
-  public getEpisodes (page: string): Observable<Info<Episode[]>> {
+  public getEpisodes(page: string): Observable<Info<Episode[]>> {
     return this.httpClient.get<Info<Episode[]>>(this.ALL_EPISODE_API + page)
   }
 }

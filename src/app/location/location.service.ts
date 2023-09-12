@@ -17,17 +17,17 @@ export class LocationService {
   private readonly ALL_LOCATION_API =
     'https://rickandmortyapi.com/api/location?page='
 
-  constructor (private readonly httpClient: HttpClient) {}
+  constructor(private readonly httpClient: HttpClient) {}
 
-  public getLocationByName (name: string): Observable<Location> {
+  public getLocationByName(name: string): Observable<Location> {
     return this.httpClient.get<Location>(this.LOCATION_URL + name)
   }
 
-  public getLocationById (id: string): Observable<Location> {
+  public getLocationById(id: string): Observable<Location> {
     return this.httpClient.get<Location>(this.SINGLE_LOCATION_API + id)
   }
 
-  public getLocations (page: string): Observable<Info<Location[]>> {
+  public getLocations(page: string): Observable<Info<Location[]>> {
     return this.httpClient.get<Info<Location[]>>(this.ALL_LOCATION_API + page)
   }
 }

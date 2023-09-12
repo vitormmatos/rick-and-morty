@@ -5,8 +5,7 @@
         <img
           class="w-64"
           [src]="character.image"
-          [alt]="character.name"
-        />
+          [alt]="character.name" />
       </figure>
       <section class="card-body h-96">
         <span class="card-title mb-2">{{ character.name }}</span>
@@ -16,8 +15,7 @@
           <section
             class="status ml-1 indicator-item badge badge-sm {{
               getBadgeStatusColor(character)
-            }}"
-          >
+            }}">
             {{ character.status }}
           </section>
         </div>

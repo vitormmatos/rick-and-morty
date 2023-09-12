@@ -14,13 +14,13 @@ export class EpisodeComponent implements OnInit {
   id!: string
   episode!: Episode
 
-  constructor (
+  constructor(
     private readonly episodeService: EpisodeService,
     private readonly characterService: CharacterService,
     private readonly route: ActivatedRoute
   ) {}
 
-  ngOnInit (): void {
+  ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.id = String(params['id'])
       this.episodeService.getEpisodeById(this.id).subscribe(data => {

@@ -1,0 +1,10 @@
+bracketSpacing: true
+semi: false
+singleQuote: true
+trailingComma: "none"
+printWidth: 80
+arrowParens: "avoid"
+htmlWhitespaceSensitivity: strict
+endOfLine: "lf"
+singleAttributePerLine: true
+bracketSameLine: true

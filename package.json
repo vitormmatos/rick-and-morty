@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "pnpx eslint 'src/**/*.{js,ts,html,css,scss}' --quiet --fix",
+    "format": "pnpx prettier 'src/**/*.{js,ts,html,css,scss}' --write"
   },
   "private": true,
   "dependencies": {

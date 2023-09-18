@@ -55,7 +55,7 @@ On Desktop:
 
 On Mobile:
 
-<img src="./screenshots/mobile-dark.png" style="width:20em; height:auto"/>
+<img src="./screenshots/mobile-dark.png" style="width:12em; height:auto"/>
 
 Theming:
 

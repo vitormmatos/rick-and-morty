@@ -14,17 +14,27 @@ Clone the project and go to the project path.
 
 ### Docker
 
-Run as a Docker Image:
-
+Build:
 ```zsh
-docker build --pull --rm -f "Dockerfile" -t rickandmorty:latest "."
+DOCKER_BUILDKIT=1 docker build --pull -f "Dockerfile" -t rickandmorty:latest "."
+```
+
+Run:
+```zsh
+docker run -p 8080:80 rickandmorty
+```
+
+To see it working go to your browser on:
+
+```browser
+localhost:8080
 ```
 
 ### Traditional
 
 Requisites: Node, Angular and a package manager.
 
-[Npm][npm-link] is used here but you can use other options as [yarn][yarn-link] or [pnpm][pnpm-link](recommended).
+[Npm][npm-link] is used here but you can use other options as [yarn][yarn-link], [pnpm][pnpm-link] or [bun][bun-link].
 
 Install it's dependencies and run with:
 
@@ -37,8 +47,6 @@ To see it working go to your browser on:
 ```browser
 localhost:4200
 ```
-
-Enjoy 😉
 
 ## Screenshots
 
@@ -70,5 +78,6 @@ This application is open source and uses a [Creative Commons CC0 1.0 Universal l
 [npm-link]: https://www.npmjs.com/
 [yarn-link]: https://yarnpkg.com/
 [pnpm-link]: https://pnpm.io/
+[bun-link]: https://bun.sh/
 [dark-desktop-screenshot]: ./screenshots/desktop-dark.png
 [theming-desktop-screenshot]: ./screenshots/theming.png

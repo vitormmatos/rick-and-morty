@@ -1,7 +1,6 @@
 # Rick and Morty
 
 [![Build][docker-build-badge]][docker-build-link]
-[![code style][code-style-icon]][code-style-link]
 [![npm][license-icon]][license-link]
 
 ## What is this?
@@ -70,8 +69,6 @@ This application is open source and uses a [Creative Commons CC0 1.0 Universal l
 
 [docker-build-link]: https://github.com/vitormmatos/vitormmatos.github.io/actions/workflows/build.yml
 [docker-build-badge]: https://github.com/vitormmatos/vitormmatos.github.io/actions/workflows/build.yml/badge.svg?branch=main
-[code-style-icon]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
-[code-style-link]: https://standardjs.com
 [license-icon]: https://flat.badgen.net/npm/license/cc-md
 [license-link]: https://github.com/idleberg/Creative-Commons-Markdown/blob/main/4.0/zero.markdown
 [api-link]: https://rickandmortyapi.com/

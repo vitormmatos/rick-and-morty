@@ -51,15 +51,15 @@ localhost:4200
 
 On Desktop:
 
-![desktop-dark][dark-desktop-screenshot]
+<img src="./screenshots/desktop-dark.png" style="width:20em; height:auto"/>
 
 On Mobile:
 
-<img src="./screenshots/mobile-dark.png" style="width:400px; height:auto"/>
+<img src="./screenshots/mobile-dark.png" style="width:10em; height:auto"/>
 
 Theming:
 
-![theming][theming-desktop-screenshot]
+<img src="./screenshots/theming.png" style="width:20em; height:auto"/>
 
 ## Copyright
 
@@ -76,5 +76,3 @@ This application is open source and uses a [Creative Commons CC0 1.0 Universal l
 [yarn-link]: https://yarnpkg.com/
 [pnpm-link]: https://pnpm.io/
 [bun-link]: https://bun.sh/
-[dark-desktop-screenshot]: ./screenshots/desktop-dark.png
-[theming-desktop-screenshot]: ./screenshots/theming.png

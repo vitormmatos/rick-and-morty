@@ -51,15 +51,15 @@ localhost:4200
 
 On Desktop:
 
-<img src="./screenshots/desktop-dark.png" style="width:20em; height:auto"/>
+<img src="./screenshots/desktop-dark.png" style="width:40em; height:auto"/>
 
 On Mobile:
 
-<img src="./screenshots/mobile-dark.png" style="width:10em; height:auto"/>
+<img src="./screenshots/mobile-dark.png" style="width:20em; height:auto"/>
 
 Theming:
 
-<img src="./screenshots/theming.png" style="width:20em; height:auto"/>
+<img src="./screenshots/theming.png" style="width:40em; height:auto"/>
 
 ## Copyright
 

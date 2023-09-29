@@ -3,63 +3,38 @@
 [![Build][docker-build-badge]][docker-build-link]
 [![npm][license-icon]][license-link]
 
-## What is this?
+This is an Angular project that consumes the
 
-This is an Angular project that consumes the [Rick and Morty REST API][api-link]
+<img src="./screenshots/desktop-dark.png" style="width:40em; height:auto"/>
+
+<img src="./screenshots/theming.png" style="width:40em; height:auto"/>
+<img src="./screenshots/mobile-dark.png" style="width:12em; height:auto"/>
 
 ## Running
-
-Clone the project and go to the project path.
 
 ### Docker
 
 Build:
+
 ```zsh
 DOCKER_BUILDKIT=1 docker build --pull -f "Dockerfile" -t rickandmorty:latest "."
 ```
 
-Run:
+Serving the app on port **8080**:
+
 ```zsh
 docker run -p 8080:80 rickandmorty
 ```
 
-To see it working go to your browser on:
-
-```browser
-localhost:8080
-```
-
 ### Traditional
 
-Requisites: Node, Angular and a package manager.
+**Requisites**: Node, Angular and a package manager ([npm][npm-link], [yarn][yarn-link], [pnpm][pnpm-link] or [bun][bun-link]).
 
-[Npm][npm-link] is used here but you can use other options as [yarn][yarn-link], [pnpm][pnpm-link] or [bun][bun-link].
-
-Install it's dependencies and run with:
+Serving the app on port **4200**:
 
 ```shell
 npm install && ng serve
 ```
-
-To see it working go to your browser on:
-
-```browser
-localhost:4200
-```
-
-## Screenshots
-
-On Desktop:
-
-<img src="./screenshots/desktop-dark.png" style="width:40em; height:auto"/>
-
-On Mobile:
-
-<img src="./screenshots/mobile-dark.png" style="width:12em; height:auto"/>
-
-Theming:
-
-<img src="./screenshots/theming.png" style="width:40em; height:auto"/>
 
 ## Copyright
 

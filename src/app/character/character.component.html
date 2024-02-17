@@ -1,8 +1,28 @@
-<h1 class="flex text-4xl justify-center mt-12 mb-6">Characters</h1>
+<section class="card w-64 hover:bg-primary shadow-xl m-4">
+  <figure>
+    <img
+      class="w-64"
+      [src]="character.image"
+      [alt]="character.name"
+    />
+  </figure>
+  <section class="card-body h-96">
+    <span class="card-title mb-2">{{ character.name }}</span>
+    <span class="font-semibold">Species:</span> {{ character.species }}
+    <div class="mt-2">
+      <span class="font-semibold">Status:</span>
+      <section
+        class="status ml-1 indicator-item badge badge-sm {{
+          getBadgeStatusColor(character)
+        }}"
+      >
+        {{ character.status }}
+      </section>
+    </div>
 
-<app-character-list [characters]="characters"></app-character-list>
-
-<app-paginator
-  pageName="character/page/"
-  [pageNumber]="id"
-></app-paginator>
+    <span class="mt-3 font-semibold">First seen in:</span>
+    <a [href]="character.origin.name">{{ character.origin.name }}</a>
+    <span class="mt-3 font-semibold">Last known location:</span>
+    <a [href]="character.location.name">{{ character.location.name }}</a>
+  </section>
+</section>

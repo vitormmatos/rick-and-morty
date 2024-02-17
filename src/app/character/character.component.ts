@@ -1,27 +1,23 @@
-import { Component, OnInit } from '@angular/core'
-import { ActivatedRoute } from '@angular/router'
-import { Character } from './character.model'
-import { CharacterService } from './character.service'
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-character',
+  standalone: true,
+  imports: [],
   templateUrl: './character.component.html'
 })
-export class CharacterComponent implements OnInit {
-  characters?: Character[]
-  id!: string
+export class CharacterComponent {
 
-  constructor(
-    private readonly service: CharacterService,
-    private readonly route: ActivatedRoute
-  ) {}
-
-  ngOnInit(): void {
-    this.route.params.subscribe(params => {
-      this.id = String(params['id'])
-      this.service.getCharacters(this.id).subscribe(data => {
-        this.characters = data.results
-      })
-    })
+  @Input() character: any
+  
+  getBadgeStatusColor(character: any): string {
+    switch (character.status) {
+      case 'Alive':
+        return 'badge-success'
+      case 'Dead':
+        return 'badge-error'
+      default:
+        return 'badge-warning'
+    }
   }
 }

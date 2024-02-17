@@ -1,7 +1,9 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-theme-changer',
+  standalone: true,
+  imports: [],
   templateUrl: './theme-changer.component.html'
 })
 export class ThemeChangerComponent {

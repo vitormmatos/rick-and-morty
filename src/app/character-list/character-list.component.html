@@ -1,0 +1,5 @@
+<main class="flex flex-wrap justify-center mb-3">
+  @for(character of characters; track character.id){
+  <app-character [character]="character"></app-character>
+  }
+</main>

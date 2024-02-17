@@ -41,8 +41,8 @@
       class="grid grid-cols-1 gap-3 p-3"
       tabindex="0"
     >
+      @for (themeName of themeNames; track $index) {
       <div
-        *ngFor="let themeName of themeNames"
         class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2 outline"
         attr.data-set-theme="{{ themeName }}"
         data-act-class="outline"
@@ -64,6 +64,7 @@
           </div>
         </div>
       </div>
+      }
     </div>
   </div>
 </div>
